@@ -1,5 +1,5 @@
 import { HasFormatter } from "../interfaces/hasFormatter";
-export class Invoice implements HasFormatter{
+export class Payment implements HasFormatter{
   
 
     constructor(
@@ -9,7 +9,6 @@ export class Invoice implements HasFormatter{
     ){}
 
     format(){
-        return `${this.client} owes #${this.amount} for ${this.details}`;
+        return `${this.client} is owed #${this.amount} for ${this.details}`;
     }
 }
-let invoices: Invoice[] = [];
