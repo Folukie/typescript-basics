@@ -3,7 +3,7 @@ import { Payment } from "./classes/payment.js";
 import { HasFormatter } from "./interfaces/hasFormatter.js";
 
 
-// let docOne: HasFormatter;
+let docOne: HasFormatter;
 
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
 
@@ -22,7 +22,7 @@ form.addEventListener('submit', (e:Event)=>{
     } else {
         doc = new Payment(tofrom.value, details.value, amount.valueAsNumber)
     }
-    console.log(doc)
+   
 })
 
 
